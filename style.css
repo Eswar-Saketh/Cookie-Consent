@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFCF6;
+    color: #2E0D14;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+}
+
+.container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: #2E0D14;
+    opacity: 0.85;
+    margin-bottom: 15px;
+}
+
+.reset-btn {
+    background: transparent;
+    color: #2E0D14;
+    border: 1px solid #2E0D14;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.reset-btn:hover {
+    background-color: #EEDCC8;
+}
+
+.cookie-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+.cookie-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EEDCC8;
+    border-radius: 12px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.cookie-emoji {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.cookie-popup h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2E0D14;
+}
+
+.cookie-popup p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #2E0D14;
+}
+
+.accept-btn {
+    background-color: #8F1238;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.accept-btn:hover {
+    background-color: #700d2b;
+}
+
+.hidden {
+    display: none !important;
+}
